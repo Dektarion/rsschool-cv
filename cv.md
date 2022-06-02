@@ -39,8 +39,12 @@ function multiply(a, b){
 ```
 
 ### Work experience:
-- Study project #1: [Stepik-hw2-HTML-CSS-landing](https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing)
-- Study project #2: [Stepik-hw3-UberEats](https://github.com/Dektarion/Stepik-hw3-UberEats)
+- Study project #1: [Stepik-hw2-HTML-CSS-landing](https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing);
+- Study project #2: [Stepik-hw3-UberEats](https://github.com/Dektarion/Stepik-hw3-UberEats).
+
+### Education:
+- Mendeleev University of Chemical Technology, sociologist;
+- [Stepik course of HTML & CSS](https://stepik.org/course/38218).
 
 
 

@@ -14,9 +14,9 @@ Within the framework of his field, he managed to work on very large projects, bu
 I have just started my way in programming and there are no serious achievements yet.
 
 **Strengths:**
-* Easily master new software to perform business tasks.
-* Have a systematic mindset.
-* Responsible, hardworking, attentive to details.
+- Easily master new software to perform business tasks.
+- Have a systematic mindset.
+- Responsible, hardworking, attentive to details.
 
 ---
 

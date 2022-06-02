@@ -46,5 +46,6 @@ function multiply(a, b){
 - Mendeleev University of Chemical Technology, sociologist;
 - [Stepik course of HTML & CSS](https://stepik.org/course/38218).
 
-
-
+### Language:
+- Russian (Native);
+- English (Intermediate).

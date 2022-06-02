@@ -13,7 +13,18 @@ I am 29 years old. I am currently working in the field of marketing research. I 
 Within the framework of his field, he managed to work on very large projects, but gradually burned out from work.<br>
 I have just started my way in programming and there are no serious achievements yet.
 
-**Strengths:**<br>
+**Strengths:**
 * Easily master new software to perform business tasks.
 * Have a systematic mindset.
 * Responsible, hardworking, attentive to details.
+
+---
+
+### Skills:
+- HTML5;
+- CSS (basics);
+- GitHub;
+- Git (basics);
+- VS Code;
+- SPSS (syntax).
+

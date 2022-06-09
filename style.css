@@ -1,13 +1,15 @@
 :root {
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Roboto Mono', monospace;
   --main-font-style: normal;
   --main-font-size: 14px;
   --main-font-weight: 400;
   --main-line-height: 20px;
   --color-yellow: #e1b83a;
+  --color-light-yellow: #ffd864;
   --color-white: #f7f7f7;
   --color-black: #242324;
-  --color-grey: #b1b0b0;
+  --color-dark-grey: #2b3640;
+  --color-light-grey: #b1b0b0;
   --color-brown: #655e54;
 }
 
@@ -23,9 +25,12 @@ body {
   background-color: var(--color-white);
 }
 
+.body-shadow {
+  box-shadow: 0 0 10px rgba(35,36,35,0.5)
+}
+
 .container {
   max-width: 1024px;
-
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -43,7 +48,7 @@ body {
 .nav__list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 55px;
   font-family: var(--main-font);
@@ -63,7 +68,7 @@ body {
 .nav__link::after {
   content: "";
   position: absolute;
-  left: 15px;
+  left: 14px;
   bottom: -3px;
   width: calc(100% - 29px);
   height: 2.5px;
@@ -86,5 +91,53 @@ body {
   to {
     width: calc(100% - 29px);
   }
+}
+
+.author {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-yellow);
+}
+
+.author__img {
+  flex-basis: 33.33%;
+  min-width: 240px;
+  padding: 0 15px;
+}
+
+.author__img_size {
+  width: 100%;
+  margin-top: 45px;
+  margin-bottom: -4px;
+}
+.author__name {
+  flex-basis: 66.66%;
+  min-width: 240px;
+  padding: 0 45px;
+}
+
+.author-name__h1_font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+
+.author-name__span_style {
+  max-width: 230px;
+  padding: 5px 25px 5px 15px;
+  background-color: var(--color-light-yellow);
+}
+
+.author-name__span_font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1em;
+  font-weight: 700;
+  line-height: var(--main-line-height);
+  color: var(--color-dark-grey);
 }
 

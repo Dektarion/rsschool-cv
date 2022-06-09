@@ -1,3 +1,90 @@
-h1 {
-    color: aquamarine;
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-font-style: normal;
+  --main-font-size: 14px;
+  --main-font-weight: 400;
+  --main-line-height: 20px;
+  --color-yellow: #e1b83a;
+  --color-white: #f7f7f7;
+  --color-black: #242324;
+  --color-grey: #b1b0b0;
+  --color-brown: #655e54;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 380px;
+  min-height: 100vh;
+  background-color: var(--color-white);
+}
+
+.container {
+  max-width: 1024px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  min-height: 55px;
+  margin-top: 10px;
+  background-color: var(--color-black);
+}
+
+.header__nav {
+  min-height: 55px;
+}
+
+.nav__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 55px;
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  list-style: none;
+}
+
+.nav__link {
+  position: relative;
+  padding: 0 15px;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: -3px;
+  width: calc(100% - 29px);
+  height: 2.5px;
+  background-color: var(--color-white);
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav__link:hover::after {
+  opacity: 1;
+  animation-name: progress-bar;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progress-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% - 29px);
+  }
+}
+

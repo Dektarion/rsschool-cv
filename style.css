@@ -692,9 +692,23 @@ body {
   color: #19a5eb;
 }
 
+.scrollup {
+  position: fixed;
+  right: 15%;
+  bottom: 24px;
+  display: none;
+  padding: 12px 16px; 
+  color: var(--color-white);
+  background-color: var(--color-yellow);
+  opacity: 0.6;
+  border-radius: 4px; 
+  cursor: pointer; 
+  text-align: center;
+}
 
-
-
+.scrollup:hover {
+  opacity: 1;
+}
 
 
 
@@ -757,5 +771,23 @@ body {
 
   .information__right-block {
     flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .scrollup {
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .scrollup {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .scrollup {
+    right: 1%;
   }
 }

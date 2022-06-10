@@ -12,10 +12,10 @@
   <title>RSShool CV</title>
 </head>
 <body>
-  <header class="container header">
+  <header class="main-container header">
     <nav class="header__nav">
       <ul class="nav__list">
-        <li class="nav__list_decoration"><a href="#about" class="nav__link">About me</a></li>
+        <li class="nav__list_decoration"><a href="#profile" class="nav__link">Profile</a></li>
         <li><a href="#contacnts" class="nav__link">Contacts</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#code" class="nav__link">Code</a></li>
@@ -26,7 +26,7 @@
     </nav>
   </header>
   <main>
-    <section class="container author">
+    <section class="main-container author">
       <div class="author__img">
         <img src="./assets/img/photo_l.jpg" alt="Photo" class="author__img_size">
       </div>
@@ -37,12 +37,95 @@
         </div>
       </div>
     </section>
-    <div>
-      <section>
-
+    <div class="inf-container information">
+      <section class="information__left-block information__left-block_bg-color">
+        <div class="information__profile" id="profile">
+          <h2 class="information__profile_h2-style information__profile_h2-font">PROFILE</h2>
+          <p class="information__profile_p-font">I am 29 years old. I am currently working in the field of marketing research. I want to change my life and study to be a front-end programmer.<br>
+            Within the framework of his field, i managed to work on very large projects, but gradually burned out from work.<br>
+            I have just started my way in programming and there are no serious achievements yet.
+          </p>
+        </div>
+        <div class="information__skills" id="skills">
+          <h2 class="information__skills_h2-style information__skills_h2-font">SKILLS</h2>
+          <div class="information_skills_display">
+            <ul class="skills__list">
+              <li class="skills__list_style skills__list_font">HTML5</li>
+              <li class="skills__list_style skills__list_font">CSS</li>
+              <li class="skills__list_style skills__list_font">GitHub</li>
+              <li class="skills__list_style skills__list_font">Git</li>
+              <li class="skills__list_style skills__list_font">VS Code</li>
+            </ul>
+            <ul class="skills__progress-list">
+              <li>
+                <div class="skills__progress-list_html">
+                  <div class="skills__progress-list_html-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_css">
+                  <div class="skills__progress-list_css-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_github">
+                  <div class="skills__progress-list_github-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_git">
+                  <div class="skills__progress-list_git-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_vscode">
+                  <div class="skills__progress-list_vscode-lvl"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="information__education" id="education">
+          <h2 class="information__education_h2-style information__education_h2-font">EDUCATION</h2>
+          <div class="information_education_display">
+            <ul class="education__list">
+              <li>
+                <img src="./assets/img/muctr_s.png" alt="MUCTR" class="education__img-muctr_size">
+              </li>
+              <li class="education__list_style-padding">
+                <a href="https://www.muctr.ru" target="_blank"  class="education__list_style education__list_font">
+                  Mendeleev University of Chemical Technology, sociologist (2010-2015)
+                </a>
+              </li>
+            </ul>
+            <ul class="education__list">
+              <li>
+                <img src="./assets/img/stepik.png" alt="Stepick" class="education__img-stepick_size education__img-stepick_style">
+              </li>
+              <li class="education__list_style-padding">
+                <a href="https://stepik.org/course/38218" target="_blank" class="education__list_style education__list_font">
+                  Stepik course of HTML & CSS (2022)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
-      <section>
-        
+      <section class="information__right-block information__right-block_bg-color">
+        <div>
+          <h2>Contacts</h2>
+          
+        </div>
+        <div>
+          <h2>Experience</h2>
+
+        </div>
+        <div>
+          <h2>Code</h2>
+        </div>
+        <div>
+          <h2>Languages</h2>
+        </div>
       </section>
     </div>
   </main>

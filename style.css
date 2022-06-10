@@ -20,7 +20,7 @@
 }
 
 body {
-  min-width: 420px;
+  min-width: 490px;
   min-height: 100vh;
   background-color: #ffffff;
 }
@@ -150,14 +150,14 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   margin-top: -1px;
 }
 
 .information__left-block {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   flex-basis: 34.13%;
   padding: 45px 25px 30px 35px;
@@ -168,7 +168,7 @@ body {
 }
 
 .information__profile {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 .information__profile_h2-style {
@@ -205,7 +205,7 @@ body {
 }
 
 .information__skills {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 .information__skills_h2-style {
@@ -338,7 +338,7 @@ body {
 }
 
 .information__education {
-  padding-bottom: 65px;
+  padding-bottom: 35px;
 }
 
 .information__education_h2-style {
@@ -369,6 +369,54 @@ body {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: stretch;
+}
+
+.information__languages {
+  padding-bottom: 35px;
+}
+
+.information__languages_h2-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.information__languages_h2-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-yellow);
+}
+
+.information__languages_h2-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.languages__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.languages__list_style {
+  color: var(--color-white);
+}
+
+.languages__list_font {
+  font-family: 'Roboto', sans-serif;
+  font-style: var(--main-font-style);
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+  line-height: 22px;
+  text-align: left;
+  color: var(--color-white);
 }
 
 .education__list {
@@ -418,15 +466,250 @@ body {
 .information__right-block {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: stretch;
   flex-basis: 65.87%;
-  padding: 0 15px;
+  padding: 45px 65px 30px 45px;
 } 
 
 .information__right-block_bg-color {
   background-color: var(--color-white);
 }
+
+.information__contacts {
+  padding-bottom: 35px;
+}
+
+.information__contacts_h2-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.information__contacts_h2-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-yellow);
+}
+
+.information__contacts_h2-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+
+.contacts_display {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.contacts__left-block_display {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__right-block_display {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__left-block_display-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__right-block_display-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts__left-block_display-li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--main-font-size);
+  color: var(--color-dark-grey);
+  list-style-type: none;
+}
+
+.contacts__right-block_display-li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--main-font-size);
+  color: var(--color-dark-grey);
+  list-style-type: none;
+}
+
+.contacts__icons_size {
+  width: 30px;
+}
+
+.contacts__text_style {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--color-dark-grey);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.contacts__text_style:hover {
+  color: var(--color-yellow);
+}
+
+.information__experience {
+  padding-bottom: 35px;
+}
+
+.information__experience_h2-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.information__experience_h2-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-yellow);
+}
+
+.information__experience_h2-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+
+.experience_h3-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.experience_h3-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-light-yellow);
+}
+
+.experience_h3-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--color-dark-grey);
+}
+
+.experience__img_overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.experience__img_size {
+  width: 100%;
+}
+
+.experience__img_style {
+  padding-bottom: 15px;
+  filter: brightness(60%);
+  transition: 0.4s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.experience__img_style:hover {
+  filter: brightness(100%);
+  transform: scale(1.06);
+}
+
+.information__code {
+  padding-bottom: 35px;
+}
+
+.information__code_h2-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.information__code_h2-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-yellow);
+}
+
+.information__code_h2-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-dark-grey);
+}
+
+.information__code_style {
+  background-color: var(--color-light-grey);
+}
+
+.code_yellow {
+  color: #b89a21;
+}
+
+.code_green {
+  color: #1f965e;
+}
+
+.code_red {
+  color: #ac1733;
+}
+
+.code_blue {
+  color: #19a5eb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

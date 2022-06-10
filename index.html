@@ -16,12 +16,12 @@
     <nav class="header__nav">
       <ul class="nav__list">
         <li class="nav__list_decoration"><a href="#profile" class="nav__link">Profile</a></li>
-        <li><a href="#contacnts" class="nav__link">Contacts</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
-        <li><a href="#code" class="nav__link">Code</a></li>
-        <li><a href="#experience" class="nav__link">Experience</a></li>
         <li><a href="#education" class="nav__link">Education</a></li>
         <li><a href="#languages" class="nav__link">Languages</a></li>
+        <li><a href="#contacts" class="nav__link">Contacts</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#code" class="nav__link">Code</a></li>
       </ul>
     </nav>
   </header>
@@ -90,7 +90,7 @@
           <div class="information_education_display">
             <ul class="education__list">
               <li>
-                <img src="./assets/img/muctr_s.png" alt="MUCTR" class="education__img-muctr_size">
+                <img src="./assets/icons/muctr_s.png" alt="MUCTR" class="education__img-muctr_size">
               </li>
               <li class="education__list_style-padding">
                 <a href="https://www.muctr.ru" target="_blank"  class="education__list_style education__list_font">
@@ -100,7 +100,7 @@
             </ul>
             <ul class="education__list">
               <li>
-                <img src="./assets/img/stepik.png" alt="Stepick" class="education__img-stepick_size education__img-stepick_style">
+                <img src="./assets/icons/stepik.png" alt="Stepick" class="education__img-stepick_size education__img-stepick_style">
               </li>
               <li class="education__list_style-padding">
                 <a href="https://stepik.org/course/38218" target="_blank" class="education__list_style education__list_font">
@@ -110,21 +110,65 @@
             </ul>
           </div>
         </div>
+        <div class="information__languages" id="languages">
+          <h2 class="information__languages_h2-style information__languages_h2-font">LANGUAGES</h2>
+          <ul class="languages__list">
+            <li class="languages__list_style languages__list_font">Russian (Native)</li>
+            <li class="languages__list_style languages__list_font">English (Intermediate)</li>
+          </ul>
+        </div>
       </section>
       <section class="information__right-block information__right-block_bg-color">
-        <div>
-          <h2>CONTACTS</h2>
-          
+        <div class="information__contacts" id="contacts">
+          <h2 class="information__contacts_h2-style information__contacts_h2-font">CONTACTS</h2>
+          <div class="contacts_display">
+            <div class="contacts__left-block_display">
+              <ul class="contacts__left-block_display-ul">
+                <li class="contacts__left-block_display-li">
+                  <img src="./assets/icons/mail.svg" alt="E-mail" class="contacts__icons_size">
+                  <a href="mailto:dektarion@gmail.com" class="contacts__text_style">dektarion@gmail.com</a>
+                </li>
+                <li class="contacts__left-block_display-li">
+                  <img src="./assets/icons/telegram.svg" alt="Telegram" class="contacts__icons_size">
+                  <a href="https://t.me/Dektarion" target="_blank" class="contacts__text_style">@Dektarion</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__right-block_display">
+              <ul class="contacts__right-block_display-ul">
+                <li class="contacts__right-block_display-li">
+                  <img src="./assets/icons/discord.svg" alt="Discord" class="contacts__icons_size">
+                  <a href="https://discordapp.com/users/377117456017391619/" target="_blank" class="contacts__text_style">Dektarion</a>
+                </li>
+                <li class="contacts__right-block_display-li">
+                  <img src="./assets/icons/github.svg" alt="Github" class="contacts__icons_size">
+                  <a href="https://github.com/Dektarion" target="_blank" class="contacts__text_style">Dektarion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2>EXPIRIENCE</h2>
-
+        <div class="information__experience" id="experience">
+          <h2 class="information__experience_h2-style information__experience_h2-font">EXPERIENCE</h2>
+            <h3 class="experience_h3-font experience_h3-style">Study project #1: Landing</h3>
+            <div class="experience__img_overflow">
+              <a href="https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing" target="_blank"><img src="./assets/img/landing.JPG" alt="Landing" class="experience__img_size experience__img_padding experience__img_style"></a>
+            </div>
+            <h3 class="experience_h3-font experience_h3-style">Study project #2: 2-pages site</h3>
+            <div class="experience__img_overflow">
+              <a href="https://github.com/Dektarion/Stepik-hw3-UberEats" target="_blank"><img src="./assets/img/uber_eats.JPG" alt="UberEats" class="experience__img_size experience__img_padding experience__img_style"></a>
+            </div>
         </div>
-        <div>
-          <h2>CODE</h2>
-        </div>
-        <div>
-          <h2>LANGUAGE</h2>
+        <div class="information__code">
+          <h2 class="information__code_h2-style information__code_h2-font" id="code">CODE</h2>
+          <pre class="information__code_style">
+            <code>
+              <b><span class="code_green">function</span> <span class="code_blue">multiply</span><span class="code_yellow">(</span><span class="code_red">a</span>, <span class="code_red">b</span><span class="code_yellow">){</span>
+                <span class="code_green">let</span> <span class="code_red">x</span> <span class="code_yellow">=</span> <span class="code_red">a</span> <span class="code_yellow">*</span> <span class="code_red">b</span>;
+                <span class="code_yellow">return</span> <span class="code_red">x</span>;
+              <span class="code_yellow">}</span></b>
+            </code>
+          </pre>
         </div>
       </section>
     </div>

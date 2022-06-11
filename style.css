@@ -736,8 +736,6 @@ body {
   width: 55px;
 }
 
-
-
 .scrollup {
   position: fixed;
   right: 15%;
@@ -755,34 +753,6 @@ body {
 .scrollup:hover {
   opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 780px) {
   .nav__list {

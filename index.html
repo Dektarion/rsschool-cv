@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <title>RSShool CV</title>
+</head>
+<body>
+  <header class="main-container header">
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__list_decoration"><a href="#profile" class="nav__link">Profile</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#languages" class="nav__link">Languages</a></li>
+        <li><a href="#contacts" class="nav__link">Contacts</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#code" class="nav__link">Code</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="main-container author">
+      <div class="author__img">
+        <img src="./assets/img/photo_l.jpg" alt="Photo" class="author__img_size">
+      </div>
+      <div class="author__name">
+        <h1 class="author-name__h1_font">ANDREY BOYARSKIY</h1>
+        <div class="author-name__span_style">
+          <span class="author-name__span_font">STUDYING FRONT-END</span>
+        </div>
+      </div>
+    </section>
+    <div class="inf-container information">
+      <section class="information__left-block information__left-block_bg-color">
+        <div class="information__profile" id="profile">
+          <h2 class="information__profile_h2-style information__profile_h2-font">PROFILE</h2>
+          <p class="information__profile_p-font">I am 29 years old. I am currently working in the field of marketing research. I want to change my life and study to be a front-end programmer.<br>
+            Within the framework of his field, i managed to work on very large projects, but gradually burned out from work.<br>
+            I have just started my way in programming and there are no serious achievements yet.
+          </p>
+        </div>
+        <div class="information__skills" id="skills">
+          <h2 class="information__skills_h2-style information__skills_h2-font">SKILLS</h2>
+          <div class="information_skills_display">
+            <ul class="skills__list">
+              <li class="skills__list_style skills__list_font">HTML5</li>
+              <li class="skills__list_style skills__list_font">CSS</li>
+              <li class="skills__list_style skills__list_font">GitHub</li>
+              <li class="skills__list_style skills__list_font">Git</li>
+              <li class="skills__list_style skills__list_font">VS Code</li>
+            </ul>
+            <ul class="skills__progress-list">
+              <li>
+                <div class="skills__progress-list_html">
+                  <div class="skills__progress-list_html-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_css">
+                  <div class="skills__progress-list_css-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_github">
+                  <div class="skills__progress-list_github-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_git">
+                  <div class="skills__progress-list_git-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_vscode">
+                  <div class="skills__progress-list_vscode-lvl"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="information__education" id="education">
+          <h2 class="information__education_h2-style information__education_h2-font">EDUCATION</h2>
+          <div class="information_education_display">
+            <ul class="education__list">
+              <li>
+                <img src="./assets/icons/muctr_s.png" alt="MUCTR" class="education__img-muctr_size">
+              </li>
+              <li class="education__list_style-padding">
+                <a href="https://www.muctr.ru" target="_blank"  class="education__list_style education__list_font">
+                  Mendeleev University of Chemical Technology, sociologist (2010-2015)
+                </a>
+              </li>
+            </ul>
+            <ul class="education__list">
+              <li>
+                <img src="./assets/icons/stepik.png" alt="Stepick" class="education__img-stepick_size education__img-stepick_style">
+              </li>
+              <li class="education__list_style-padding">
+                <a href="https://stepik.org/course/38218" target="_blank" class="education__list_style education__list_font">
+                  Stepik course of HTML & CSS (2022)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="information__languages" id="languages">
+          <h2 class="information__languages_h2-style information__languages_h2-font">LANGUAGES</h2>
+          <ul class="languages__list">
+            <li class="languages__list_style languages__list_font">Russian (Native)</li>
+            <li class="languages__list_style languages__list_font">English (Intermediate)</li>
+          </ul>
+        </div>
+      </section>
+      <section class="information__right-block information__right-block_bg-color">
+        <div class="information__contacts" id="contacts">
+          <h2 class="information__contacts_h2-style information__contacts_h2-font">CONTACTS</h2>
+          <div class="contacts_display">
+            <div class="contacts__left-block_display">
+              <ul class="contacts__left-block_display-ul">
+                <li class="contacts__left-block_display-li">
+                  <img src="./assets/icons/mail.svg" alt="E-mail" class="contacts__icons_size">
+                  <a href="mailto:dektarion@gmail.com" class="contacts__text_style">dektarion@gmail.com</a>
+                </li>
+                <li class="contacts__left-block_display-li">
+                  <img src="./assets/icons/telegram.svg" alt="Telegram" class="contacts__icons_size">
+                  <a href="https://t.me/Dektarion" target="_blank" class="contacts__text_style">@Dektarion</a>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__right-block_display">
+              <ul class="contacts__right-block_display-ul">
+                <li class="contacts__right-block_display-li">
+                  <img src="./assets/icons/discord.svg" alt="Discord" class="contacts__icons_size">
+                  <a href="https://discordapp.com/users/377117456017391619/" target="_blank" class="contacts__text_style">Dektarion</a>
+                </li>
+                <li class="contacts__right-block_display-li">
+                  <img src="./assets/icons/github.svg" alt="Github" class="contacts__icons_size">
+                  <a href="https://github.com/Dektarion" target="_blank" class="contacts__text_style">Dektarion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="information__experience" id="experience">
+          <h2 class="information__experience_h2-style information__experience_h2-font">EXPERIENCE</h2>
+            <h3 class="experience_h3-font experience_h3-style">Study project #1: Landing</h3>
+            <div class="experience__img_overflow">
+              <a href="https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing" target="_blank"><img src="./assets/img/landing.JPG" alt="Landing" class="experience__img_size experience__img_padding experience__img_style"></a>
+            </div>
+            <h3 class="experience_h3-font experience_h3-style">Study project #2: 2-pages site</h3>
+            <div class="experience__img_overflow">
+              <a href="https://github.com/Dektarion/Stepik-hw3-UberEats" target="_blank"><img src="./assets/img/uber_eats.JPG" alt="UberEats" class="experience__img_size experience__img_padding experience__img_style"></a>
+            </div>
+        </div>
+        <div class="information__code">
+          <h2 class="information__code_h2-style information__code_h2-font" id="code">CODE</h2>
+          <pre class="information__code_style">
+            <code>
+              <b><span class="code_green">function</span> <span class="code_blue">multiply</span><span class="code_yellow">(</span><span class="code_red">a</span>, <span class="code_red">b</span><span class="code_yellow">){</span>
+                <span class="code_green">let</span> <span class="code_red">x</span> <span class="code_yellow">=</span> <span class="code_red">a</span> <span class="code_yellow">*</span> <span class="code_red">b</span>;
+                <span class="code_yellow">return</span> <span class="code_red">x</span>;
+              <span class="code_yellow">}</span></b>
+            </code>
+          </pre>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="scrollup">
+    <img src="./assets/img/arrow.svg" alt="Arrow">
+  </div>
+  <footer class="main-container footer footer_style">
+    <div class="footer__git_display">
+      <img src="./assets/icons/github_white.svg" alt="Github" class="footer__icons_size">
+      <a href="https://github.com/Dektarion" target="_blank" class="footer__text_style">
+        Visit my GitHub
+      </a>
+    </div>
+    <div class="footer__text-created_style">
+      CREATED IN 2022
+    </div>
+    <div class="footer__rss_display">
+      <img src="./assets/img/rs_school_js.svg" alt="RSSchool" class="footer__icons-rss_size">
+      <a href="https://rs.school/js/" target="_blank" class="footer__text_style">
+        The Rolling Scopes
+      </a>
+    </div>  
+  </footer>
+</body>
+</html>

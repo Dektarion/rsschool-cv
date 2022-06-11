@@ -1,0 +1,51 @@
+![Photo](/img/photo.jpg)<br>
+# Andrey Boyarsky
+
+### Contact Information:
+![Telegram](/img/tg.png) **Telegram:** [@Dektarion](https://t.me/Dektarion)<br>
+![Discord](/img/dis.png) **Discord:** [Dektarion](https://discordapp.com/users/377117456017391619/)<br>
+![Phone](/img/phone.png) **Phone:** +7-993-359-84-76
+
+---
+
+### About me:
+I am 29 years old. I am currently working in the field of marketing research. I want to change my life and study to be a frontend programmer.<br>
+Within the framework of his field, he managed to work on very large projects, but gradually burned out from work.<br>
+I have just started my way in programming and there are no serious achievements yet.
+
+**Strengths:**
+- Easily master new software to perform business tasks.
+- Have a systematic mindset.
+- Responsible, hardworking, attentive to details.
+
+---
+
+### Skills:
+- HTML5;
+- CSS (basics);
+- GitHub;
+- Git (basics);
+- VS Code;
+- SPSS (syntax).
+
+---
+
+### Code example:
+```javascript
+function multiply(a, b){
+  let x = a * b;
+  return x;
+}
+```
+
+### Work experience:
+- Study project #1: [Stepik-hw2-HTML-CSS-landing](https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing);
+- Study project #2: [Stepik-hw3-UberEats](https://github.com/Dektarion/Stepik-hw3-UberEats).
+
+### Education:
+- Mendeleev University of Chemical Technology, sociologist;
+- [Stepik course of HTML & CSS](https://stepik.org/course/38218).
+
+### Language:
+- Russian (Native);
+- English (Intermediate).

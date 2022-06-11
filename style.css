@@ -716,7 +716,17 @@ body {
   width: 30px;
 }
 
-.footer__text_style,
+.footer__text_style {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
 .footer__text-created_style {
   font-family: var(--main-font);
   font-style: var(--main-font-style);
@@ -725,6 +735,7 @@ body {
   line-height: var(--main-line-height);
   color: var(--color-white);
   text-decoration: none;
+  text-align: center;
   transition: 0.4s;
 }
 
@@ -787,6 +798,14 @@ body {
 
   .information__right-block {
     flex-basis: 100%;
+  }
+
+  .footer__git_display,
+  .footer__rss_display {
+  flex-flow: column wrap;
+  padding: 10px 5px;
+  justify-content: center;
+  text-align: center;
   }
 }
 

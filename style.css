@@ -692,6 +692,52 @@ body {
   color: #19a5eb;
 }
 
+.footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_style {
+  min-height: 55px;
+  background-color: var(--color-black);
+}
+
+.footer__git_display,
+.footer__rss_display {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__icons_size {
+  width: 30px;
+}
+
+.footer__text_style,
+.footer__text-created_style {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  line-height: var(--main-line-height);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.footer__text_style:hover {
+  color: var(--color-yellow);
+}
+
+.footer__icons-rss_size {
+  width: 55px;
+}
+
+
+
 .scrollup {
   position: fixed;
   right: 15%;

@@ -20,14 +20,10 @@
 }
 
 body {
-  min-width: 490px;
+  min-width: 450px;
   min-height: 100vh;
   background-color: #ffffff;
 }
-
-/* .body-shadow {
-  box-shadow: 0 0 10px rgba(35,36,35,0.5)
-} */
 
 .main-container {
   max-width: 1024px;
@@ -42,7 +38,6 @@ body {
 
 .header {
   min-height: 55px;
-  /* margin-top: 10px; */
   background-color: var(--color-black);
 }
 
@@ -419,6 +414,51 @@ body {
   color: var(--color-white);
 }
 
+.information__certificates {
+  padding-bottom: 35px;
+}
+
+.information__certificates_h2-style {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.information__certificates_h2-style::after {
+  content: "";
+  position: absolute;
+  left:0px;
+  bottom: 16px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-yellow);
+}
+
+.information__certificates_h2-font {
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.certificates__img_overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+.certificates__img_size {
+  width: 100%;
+}
+
+.certificates__img_style {
+  padding-bottom: 15px;
+  transition: 0.4s cubic-bezier(0.12, 0, 0.39, 0);
+}
+
+.certificates__img_style:hover {
+  transform: scale(1.06);
+}
+
 .education__list {
   display: flex;
   flex-flow: row nowrap;
@@ -432,15 +472,12 @@ body {
   height: 48px;
 }
 
-.education__img-stepick_size {
+.education__img-stepik_size {
   width: 27px;
   height: 27px;
 }
 
-.education__img-stepick_style {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
+.education__img-stepik_style {
   border: 1px solid var(--color-black);
   border-radius: 40%;
 }
@@ -452,6 +489,11 @@ body {
 .education__list_style {
   text-decoration: none;
   color: var(--color-white);
+  transition: 0.4s;
+}
+
+.education__list_style:hover {
+  color: var(--color-yellow);
 }
 
 .education__list_font {
@@ -772,7 +814,6 @@ body {
   
   .author__img {
     display: none;
-    /* flex-basis: 100%; */
   }
 
   .author__name {
@@ -806,6 +847,10 @@ body {
   padding: 10px 5px;
   justify-content: center;
   text-align: center;
+  }
+
+  .certificates__img_size {
+    width: 70%;
   }
 }
 

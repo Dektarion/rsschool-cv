@@ -17,12 +17,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  min-width: 450px;
+  min-width: 300px;
   min-height: 100vh;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -36,9 +38,12 @@ body {
   margin: 0 auto;
 }
 
+/* ?Header */
+
 .header {
   min-height: 55px;
   background-color: var(--color-black);
+  transition: 0.5s;
 }
 
 .header__nav {
@@ -48,7 +53,8 @@ body {
 .nav__list {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 15px;
   align-items: center;
   min-height: 55px;
   font-family: var(--main-font);
@@ -60,7 +66,6 @@ body {
 
 .nav__link {
   position: relative;
-  padding: 0 15px;
   text-decoration: none;
   color: var(--color-white);
 }
@@ -68,30 +73,31 @@ body {
 .nav__link::after {
   content: "";
   position: absolute;
-  left: 14px;
+  right: 0px;
   bottom: -3px;
-  width: calc(100% - 29px);
+  width: 0;
   height: 2.5px;
   background-color: var(--color-white);
-  opacity: 0;
-  transition: .5s;
+  transition: width ease-in-out 1s;
+  z-index: 1;
 }
 
 .nav__link:hover::after {
-  opacity: 1;
-  animation-name: progress-bar;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
+  width: 100%;
+  left: 0px;
+  background-color: var(--color-white);
+  transition: width ease-in-out 1s;
 }
 
-@keyframes progress-bar {
-  from {
-    width: 0;
-  }
-  to {
-    width: calc(100% - 29px);
-  }
+.header__nav_mobile {
+  display: none;
 }
+
+.header__mobile-hamburger {
+  display: none;
+}
+
+/* ?Author */
 
 .author {
   display: flex;
@@ -105,6 +111,7 @@ body {
   flex-basis: 33.33%;
   min-width: 210px;
   padding: 0 15px;
+  /* background-color: var(--color-black); */
 }
 
 .author__img_size {
@@ -140,6 +147,8 @@ body {
   line-height: var(--main-line-height);
   color: var(--color-dark-grey);
 }
+
+/* ?Information */
 
 .information {
   display: flex;
@@ -807,67 +816,3 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 780px) {
-  .nav__list {
-    justify-content: space-around;
-  }
-  
-  .author__img {
-    display: none;
-  }
-
-  .author__name {
-    flex-basis: 100%;
-    padding: 0 45px 0 15px;
-  }
-
-  .author-name__span_style {
-  margin-bottom: 10px;
-  }
-
-  .information__left-block {
-    flex-basis: 100%;
-  }
-
-  .information__profile_h2-style {
-    padding-bottom: 10px;
-  }
-
-  .information__profile_h2-style::after {
-    bottom: 6px;
-  }
-
-  .information__right-block {
-    flex-basis: 100%;
-  }
-
-  .footer__git_display,
-  .footer__rss_display {
-  flex-flow: column wrap;
-  padding: 10px 5px;
-  justify-content: center;
-  text-align: center;
-  }
-
-  .certificates__img_size {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 1450px) {
-  .scrollup {
-    right: 10%;
-  }
-}
-
-@media screen and (max-width: 1270px) {
-  .scrollup {
-    right: 5%;
-  }
-}
-
-@media screen and (max-width: 1130px) {
-  .scrollup {
-    right: 1%;
-  }
-}

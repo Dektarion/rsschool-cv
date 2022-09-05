@@ -1,0 +1,137 @@
+
+@media screen and (max-width: 790px) {
+.header {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 32px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.nav__list {
+  justify-content: space-around;
+}
+
+.header__nav_mobile {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: -150px;
+  width: 150px;
+  height: 280px;
+  background-color: var(--color-black);
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 3;
+  transition: 0.6s;
+}
+
+.nav__list_mobile {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  gap: 15px;
+  align-items: flex-end;
+  min-height: 55px;
+  font-family: var(--main-font);
+  font-style: var(--main-font-style);
+  font-size: 16px;
+  font-weight: var(--main-font-weight);
+  list-style: none;
+}
+
+.header__mobile-hamburger {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 4px;
+  padding: 4px 8.38px;
+  width: 35px;
+  height: 32px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2;
+}
+
+.header__mobile-hamburger-line {
+  z-index: 3;
+  width: 26.25px;
+  height: 1.67px;
+  background-color: var(--color-white);
+  border: 0;
+  border-radius: 10px;
+  margin: 1px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.header__nav_mobile.open {
+  right: 0px;
+}
+
+.header__nav_mobile.closed {
+  right: -150px;
+}
+
+
+.author__img {
+  display: none;
+}
+
+.author__name {
+  flex-basis: 100%;
+  padding: 0 45px 0 15px;
+}
+
+.author-name__span_style {
+margin-bottom: 10px;
+}
+
+.information__left-block {
+  flex-basis: 100%;
+}
+
+.information__profile_h2-style {
+  padding-bottom: 10px;
+}
+
+.information__profile_h2-style::after {
+  bottom: 6px;
+}
+
+.information__right-block {
+  flex-basis: 100%;
+}
+
+.footer__git_display,
+.footer__rss_display {
+flex-flow: column wrap;
+padding: 10px 5px;
+justify-content: center;
+text-align: center;
+}
+
+.certificates__img_size {
+  width: 70%;
+}
+}
+
+@media screen and (max-width: 1450px) {
+.scrollup {
+  right: 10%;
+}
+}
+
+@media screen and (max-width: 1270px) {
+.scrollup {
+  right: 5%;
+}
+}
+
+@media screen and (max-width: 1130px) {
+.scrollup {
+  right: 1%;
+}
+}

@@ -8,6 +8,13 @@ document.addEventListener('scroll', () => {
   }
 });
 
+scrollUP.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+});
+
 const mobileMenuIcon = document.querySelector('.header__mobile-hamburger');
 const mobileMenuLine = document.querySelectorAll('.header__mobile-hamburger-line');
 const mobileNavMenu = document.querySelector('.header__nav_mobile');
@@ -33,7 +40,7 @@ experienceItems.forEach(item => {
   });
 
   item.addEventListener('mouseout', (event) => {
-    experienceItems.forEach(item => item.classList.remove('experience_description_show')); 
+    experienceItems.forEach(item => item.classList.remove('experience_description_show'));
   });
 });
 

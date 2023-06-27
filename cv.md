@@ -9,7 +9,7 @@
 ---
 
 ### About me:
-I'm 29 and I've already managed to successfully completed several big scales projects within my current occupation as SeniorMarketing Researcher.<br>
+I'm 30 and I've already managed to successfully completed several big scales projects within my current occupation as SeniorMarketing Researcher.<br>
 Besides current business going smooth I always wanted  to enrich myself with the education of IT front-end developer and face the new challenges in my career on this field.<br>
 While my great achievements in IT developing are yet to come, I'm happy to share my some starting projects that evolved as the result of my edcuation.<br>
 I'm just on the beginning of this trail but completely sure I will succeed!

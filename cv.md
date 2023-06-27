@@ -13,6 +13,10 @@ I'm 29 and I've already managed to successfully completed several big scales pro
 Besides current business going smooth I always wanted  to enrich myself with the education of IT front-end developer and face the new challenges in my career on this field.<br>
 While my great achievements in IT developing are yet to come, I'm happy to share my some starting projects that evolved as the result of my edcuation.<br>
 I'm just on the beginning of this trail but completely sure I will succeed!
+I'm 29 and I've already managed to successfully completed several big scales projects within my current occupation as SeniorMarketing Researcher.<br>
+Besides current business going smooth I always wanted  to enrich myself with the education of IT front-end developer and face the new challenges in my career on this field.<br>
+While my great achievements in IT developing are yet to come, I'm happy to share my some starting projects that evolved as the result of my edcuation.<br>
+I'm just on the beginning of this trail but completely sure I will succeed!
 
 **Strengths:**
 - Easily master new software to perform business tasks.
@@ -23,16 +27,18 @@ I'm just on the beginning of this trail but completely sure I will succeed!
 
 ### Skills:
 - HTML5;
-- CSS (basics);
-- JS (bacics);
+- CSS (medium);
+- SASS/SCSS (basics)
+- JS (intermediate);
 - GitHub;
-- Git (basics);
+- Git (intermediate);
 - VS Code;
 - SPSS (syntax).
 
 ---
 
 ### Code example:
+Recursion arrow function for creating array with random non repeating objects.
 Recursion arrow function for creating array with random non repeating objects.
 ```javascript
 const getCardsArr = (counter) => {
@@ -48,7 +54,7 @@ const getCardsArr = (counter) => {
   } else {
     return randomCardsArr;
   }
-  
+
   max = Object.keys(obj).length - 1;
 
   for (let i = 0; i < ancientsData[gameInformation.numGodInArr].cardsCount[counter]; i++) {
@@ -56,7 +62,7 @@ const getCardsArr = (counter) => {
       let num =  Math.floor(Math.random() * (max - min + 1)) + min;
       check = randomCardsArr.includes(obj[num]);
       if(!check){
-        randomCardsArr.push(obj[num]);      
+        randomCardsArr.push(obj[num]);
       }
     }
     while(check);
@@ -72,9 +78,15 @@ const getCardsArr = (counter) => {
 - RSSchool Stage#0 Landing: [Travel](https://dektarion.github.io/Travel/);
 - RSSchool Stage#0 JS Task: [Momentum](https://dektarion-momentum.netlify.app/);
 - RSSchool Stage#0 Codejam JS Task: [Eldritch](https://dektarion.github.io/codejam-eldritch/).
+- Study project #2: [Stepik-hw3-UberEats](https://github.com/Dektarion/Stepik-hw3-UberEats);
+- RSSchool Stage#0 Landing: [Travel](https://dektarion.github.io/Travel/);
+- RSSchool Stage#0 JS Task: [Momentum](https://dektarion-momentum.netlify.app/);
+- RSSchool Stage#0 Codejam JS Task: [Eldritch](https://dektarion.github.io/codejam-eldritch/).
 
 ### Education:
 - Mendeleev University of Chemical Technology, sociologist;
+- [Stepik course of HTML & CSS](https://stepik.org/course/38218);
+- [RSSchool Stage#0](https://github.com/rolling-scopes-school/tasks/tree/master/stage0).
 - [Stepik course of HTML & CSS](https://stepik.org/course/38218);
 - [RSSchool Stage#0](https://github.com/rolling-scopes-school/tasks/tree/master/stage0).
 

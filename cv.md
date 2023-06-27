@@ -49,7 +49,6 @@ const getCardsArr = (counter) => {
   } else {
     return randomCardsArr;
   }
-
   max = Object.keys(obj).length - 1;
 
   for (let i = 0; i < ancientsData[gameInformation.numGodInArr].cardsCount[counter]; i++) {

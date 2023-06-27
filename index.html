@@ -4,20 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/favicon/favicon.ico">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"> 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/media.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="./index.js"></script>
   <title>RSShool CV</title>
 </head>
-<body>
+<body class="test">
   <header class="main-container header">
     <nav class="header__nav">
       <ul class="nav__list">
-        <li class="nav__list_decoration"><a href="#profile" class="nav__link">Profile</a></li>
+        <li><a href="#profile" class="nav__link">Profile</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#languages" class="nav__link">Languages</a></li>
+        <li><a href="#certificates" class="nav__link">Certificates</a></li>
+        <li><a href="#contacts" class="nav__link">Contacts</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#code" class="nav__link">Code</a></li>
+      </ul>
+    </nav>
+    <div class="header__mobile-hamburger">
+      <span class="header__mobile-hamburger-line"></span>
+      <span class="header__mobile-hamburger-line"></span>
+      <span class="header__mobile-hamburger-line"></span>
+    </div>
+    <nav class="header__nav_mobile">
+      <ul class="nav__list_mobile">
+        <li><a href="#profile" class="nav__link">Profile</a></li>
         <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#education" class="nav__link">Education</a></li>
         <li><a href="#languages" class="nav__link">Languages</a></li>
@@ -56,6 +70,7 @@
             <ul class="skills__list">
               <li class="skills__list_style skills__list_font">HTML5</li>
               <li class="skills__list_style skills__list_font">CSS</li>
+              <li class="skills__list_style skills__list_font">JS</li>
               <li class="skills__list_style skills__list_font">GitHub</li>
               <li class="skills__list_style skills__list_font">Git</li>
               <li class="skills__list_style skills__list_font">VS Code</li>
@@ -69,6 +84,11 @@
               <li>
                 <div class="skills__progress-list_css">
                   <div class="skills__progress-list_css-lvl"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skills__progress-list_js">
+                  <div class="skills__progress-list_js-lvl"></div>
                 </div>
               </li>
               <li>
@@ -97,7 +117,7 @@
                 <img src="./assets/icons/muctr_s.png" alt="MUCTR" class="education__img-muctr_size">
               </li>
               <li class="education__list_style-padding">
-                <a href="https://www.muctr.ru" target="_blank"  class="education__list_style education__list_font">
+                <a href="https://www.muctr.ru" target="_blank" class="education__list_style education__list_font">
                   Mendeleev University of Chemical Technology, sociologist (2010-2015)
                 </a>
               </li>
@@ -108,7 +128,17 @@
               </li>
               <li class="education__list_style-padding">
                 <a href="https://stepik.org/course/38218" target="_blank" class="education__list_style education__list_font">
-                  Stepik course of HTML & CSS (2022)
+                  Stepik course of HTML &amp; CSS (2022)
+                </a>
+              </li>
+            </ul>
+            <ul class="education__list">
+              <li>
+                <img src="./assets/icons/rss_logo_white.svg" alt="RSS" class="education__img-rss_size">
+              </li>
+              <li class="education__list_style-padding">
+                <a href="https://rs.school/" target="_blank" class="education__list_style education__list_font">
+                  RS Shool Stage #0 (2023)
                 </a>
               </li>
             </ul>
@@ -124,7 +154,7 @@
         <div class="information__certificates" id="certificates">
           <h2 class="information__certificates_h2-style information__certificates_h2-font">CERTIFICATES</h2>
           <div class="certificates__img_overflow">
-            <a href="https://stepik.org/cert/1493983" target="_blank"><img src="./assets/img/stepik-certificate.jpg" alt="Stepik-certificate" class="certificates__img_size certificates__img_padding certificates__img_style"></a>
+            <a href="https://app.rs.school/certificate/9b3248mx" target="_blank"><img src="./assets/img/rss_sertificate.png" alt="RSS-certificate" class="certificates__img_size certificates__img_padding certificates__img_style"></a>
           </div>
         </div>
       </section>
@@ -160,25 +190,60 @@
         </div>
         <div class="information__experience" id="experience">
           <h2 class="information__experience_h2-style information__experience_h2-font">EXPERIENCE</h2>
-            <h3 class="experience_h3-font experience_h3-style">Study project #1: Landing</h3>
-            <div class="experience__img_overflow">
-              <a href="https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing" target="_blank"><img src="./assets/img/landing.JPG" alt="Landing" class="experience__img_size experience__img_padding experience__img_style"></a>
-            </div>
-            <h3 class="experience_h3-font experience_h3-style">Study project #2: 2-pages site</h3>
-            <div class="experience__img_overflow">
-              <a href="https://github.com/Dektarion/Stepik-hw3-UberEats" target="_blank"><img src="./assets/img/uber_eats.JPG" alt="UberEats" class="experience__img_size experience__img_padding experience__img_style"></a>
+            <div class="experience_display">
+              <div class="experience_momentum experience__item">
+                <a href="https://dektarion-momentum.netlify.app/" target="_blank" class="experience__link">
+                  <div class="experience__wrap">
+                    <img src="./assets/img/momentum.png" alt="momentum" class="experience__img_size-grid">
+                    <p class="experience_description">RSSchool Stage#0 JS Task</p>
+                  </div>
+                </a>
+              </div>
+              <div class="experience_travel experience__item">
+                <a href="https://dektarion.github.io/Travel/" target="_blank" class="experience__link">
+                  <div class="experience__wrap">
+                    <img src="./assets/img/travel_v2.png" alt="travel" class="experience__img_size-grid">
+                    <p class="experience_description">RSSchool Stage#0 Landing</p>
+                  </div>
+                </a>
+              </div>
+              <div class="experience_codejam experience__item">
+                <a href="https://dektarion.github.io/codejam-eldritch/" target="_blank" class="experience__link">
+                  <div class="experience__wrap">
+                    <img src="./assets/img/codejam.png" alt="eldrich" class="experience__img_size-grid">
+                    <p class="experience_description">RSSchool Stage#0 Codejam JS Task</p>
+                  </div>
+                </a>
+              </div>
+              <div class="experience_ubereats experience__item">
+                <a href="https://github.com/Dektarion/Stepik-hw3-UberEats" target="_blank" class="experience__link">
+                  <div class="experience__wrap">
+                    <img src="./assets/img/uber_eats_V2.jpg" alt="ubereats" class="experience__img_size-grid">
+                    <p class="experience_description">Stepik study project #2: 2-pages site</p>
+                  </div>
+                </a>
+              </div>
+              <div class="experience_landing experience__item">
+                <a href="https://github.com/Dektarion/Stepik-hw2-HTML-CSS-landing" target="_blank" class="experience__link">
+                  <div class="experience__wrap">
+                    <img src="./assets/img/landing.JPG" alt="landing" class="experience__img_size-grid">
+                    <p class="experience_description">Stepik study project #1: Landing</p>
+                  </div>
+                </a>
+              </div>
             </div>
         </div>
         <div class="information__code">
           <h2 class="information__code_h2-style information__code_h2-font" id="code">CODE</h2>
-          <pre class="information__code_style">
+          <div class="information__code_style">
             <code>
-              <b><span class="code_green">function</span> <span class="code_blue">multiply</span><span class="code_yellow">(</span><span class="code_red">a</span>, <span class="code_red">b</span><span class="code_yellow">){</span>
-                <span class="code_green">let</span> <span class="code_red">x</span> <span class="code_yellow">=</span> <span class="code_red">a</span> <span class="code_yellow">*</span> <span class="code_red">b</span>;
-                <span class="code_yellow">return</span> <span class="code_red">x</span>;
-              <span class="code_yellow">}</span></b>
+              &nbsp;function mobileMenu() {<br>
+                &nbsp;&nbsp;icon.classList.add('open');<br>
+                &nbsp;&nbsp;menu.classList.add('open');<br>
+                &nbsp;&nbsp;close.classList.add('open');<br>
+                &nbsp;}
             </code>
-          </pre>
+          </div>
         </div>
       </section>
     </div>
@@ -197,11 +262,12 @@
       CREATED IN 2022
     </div>
     <div class="footer__rss_display">
-      <img src="./assets/img/rs_school_js.svg" alt="RSSchool" class="footer__icons-rss_size">
+      <img src="./assets/icons/rss_logo_white.svg" alt="RSSchool" class="footer__icons-rss_size">
       <a href="https://rs.school/js/" target="_blank" class="footer__text_style">
         The Rolling Scopes
       </a>
-    </div>  
+    </div>
   </footer>
+  <script src="./index.js"></script>
 </body>
 </html>
